@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamro पाणिनी</title>
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <h1>Hamro पाणिनी</h1>
+  </header>
+
+  <!-- Navigation Drawer -->
+  <nav id="drawer">
+    <ul>
+      <li onclick="showSection('home')">Home</li>
+      <li onclick="showSection('tourism')">Tourism & Historical Places</li>
+      <li onclick="showSection('promo')">Promotions</li>
+      <li onclick="showSection('Blogs')">Blogs</li>
+      <li onclick="showSection('Nepaliuni')">Nepali Unicode</li>
+      <li onclick="showSection('about')">About Us</li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="mainContent">
+    <!-- Home Section -->
+    <div id="home" class="content-section active">
+      <div class="popup" onclick="togglePopup(this)">
+        <img src="https://via.placeholder.com/150" alt="पाणिनी तपोभुमी">
+        <h3>पाणिनी तपोभुमी दह</h3>
+        <p>Explore the Panini with a rich history.</p>
+        <p class="brief-description">
+          Pānini Tapobhumi (Nepali: पाणिनि तपोभुमि) is a Hindu temple site located on the high hill of Panena village in
+          the Arghakhanchi district of Lumbini province, in Nepal. This religious place derives its name from sage
+          Pānini, a Sanskrit philologist, grammarian, and revered scholar in ancient India, and is known as a locale
+          where he performed penance.
+
+          According to legend, Pānini came to Panena where he performed penance and authored his work Ashtadhyayi, a
+          treatise on Sanskrit grammar.
+
+          Panini Tapobhumi houses many temples and archaeological sites and is believed to be an interesting tourist
+          destination.
+        </p>
+        <div class="actions">
+          <button>Interested</button>
+          <button>Check In</button>
+        </div>
+      </div>
+
+      <div class="popup" onclick="togglePopup(this)">
+        <img src="https://via.placeholder.com/150" alt="Place img">
+        <h3>दुर्वाशेश्वर गुफा (सत्तले गुफा) </h3>
+        <p>Explore the Durwasheshwar Ghufa: a historical/cultural place</p>
+        <p class="brief-description">
+          Explore the Durwasheshwar Ghufa: a historical/cultural place
+        </p>
+        <div class="actions">
+          <button>Interested</button>
+          <button>Check In</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tourism Section -->
+    <div id="tourism" class="content-section">
+      <h2>Tourism & Historical Places</h2>
+
+      <!-- here tourism -->
+
+      <div class="popup" onclick="togglePopup(this)">
+        <img src="https://via.placeholder.com/150" alt="पाणिनी तपोभुमी">
+        <h3>पाणिनी तपोभुमी दह</h3>
+        <p>Explore the Panini with a rich history.</p>
+        <p class="brief-description">
+          Pānini Tapobhumi (Nepali: पाणिनि तपोभुमि) is a Hindu temple site located on the high hill of Panena village in
+          the Arghakhanchi district of Lumbini province, in Nepal. This religious place derives its name from sage
+          Pānini, a Sanskrit philologist, grammarian, and revered scholar in ancient India, and is known as a locale
+          where he performed penance.
+
+          According to legend, Pānini came to Panena where he performed penance and authored his work Ashtadhyayi, a
+          treatise on Sanskrit grammar.
+
+          Panini Tapobhumi houses many temples and archaeological sites and is believed to be an interesting tourist
+          destination.
+        </p>
+        <div class="actions">
+          <button>Interested</button>
+          <button>Check In</button>
+        </div>
+      </div>
+
+      <div class="popup" onclick="togglePopup(this)">
+        <img src="https://via.placeholder.com/150" alt="Place img">
+        <h3>दुर्वाशेश्वर गुफा (सत्तले गुफा) </h3>
+        <p>Explore the Durwasheshwar Ghufa: a historical/cultural place</p>
+        <p class="brief-description">
+          Explore the Durwasheshwar Ghufa: a historical/cultural place
+        </p>
+        <div class="actions">
+          <button>Interested</button>
+          <button>Check In</button>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <!-- Promotions Section -->
+    <div id="promo" class="content-section">
+      <h2>Promotions</h2>
+      <div class="popup">
+        <img src="https://via.placeholder.com/150" alt="Hotel Sunrise">
+        <h3>Hotel Sunrise</h3>
+        <p>Owner: Mr. Ram, Contact: 9876543210</p>
+        <div class="actions">
+          <button>Interested</button>
+          <button>Check In</button>
+        </div>
+      </div>
+
+      <br>
+      <div class="popup">
+
+        <h3>For Promotion</h3>
+        <p>for promoting your local business, product you can contact us:</p>
+        <p><b>Contact:</b>9867508725</p>
+        <p><b>Gmail:</b>utsabadhikari075@gmail.com</p>
+
+      </div>
+
+
+
+    </div>
+
+
+    <!-- Blogs Section -->
+    <div id="Blogs" class="content-section">
+      <h2>Blogs Here</h2>
+      <p>Promotions and special offers will be listed here.</p>
+    </div>
+
+    <!-- Nepali Unicode -->
+
+    <!-- Blogs Section -->
+    <div id="Nepaliuni" class="content-section">
+      <h2>Nepali Unicode</h2>
+      <p>You can convert Roman To Nepali from here:</p>
+      <iframe width="100%" height="400" frameborder="0" border="no" scrolling="no" marginwidth="0" marginheight="0"
+        allowtransparency="true" src="https://www.ashesh.com.np/linknepali-unicode3.php?api=492114p235">
+      </iframe><br><span style="color:gray; font-size:8px; text-align:left">© <a
+          href="https://www.ashesh.com.np/nepali-unicode.php" title="Nepali unicode" target="_top"
+          style="text-decoration:none; color:gray;">Nepali Unicode: You can click here to check the Nepali Unicode web
+          page</a></span>
+
+
+
+
+
+    </div>
+
+
+    <!-- About Us Section -->
+    <div id="about" class="content-section">
+      <h2>About Us</h2>
+      <p>Developed by: Utsab Adhikari</p>
+      <p>Email: utsabadhikari075@gmail.com</p>
+      <p>Phone: 9867508725</p>
+    </div>
+  </main>
+
+  <!-- JavaScript for Interaction -->
+  <script src="script.js">
+
+
+
+  </script>
+</body>
+
+</html>
