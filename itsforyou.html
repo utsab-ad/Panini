@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f5f5f5;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .hidden {
+            display: none;
+        }
+        .love-frame {
+            padding: 30px;
+            background: pink;
+            border: 5px solid red;
+            border-radius: 20px;
+            display: inline-block;
+        }
+        .love-frame h2 {
+            color: white;
+        }
+        .error {
+            color: red;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="login-page">
+        <h2>Please enter your name:</h2>
+        <input type="text" id="nameInput">
+        <button onclick="checkName()">Submit</button>
+    </div>
+    
+    <div class="container hidden" id="welcome-page">
+        <div class="love-frame">
+            <h2>Welcome, Utsab Adhikari! ❤</h2>
+            <p>You are special and appreciated! Keep shining!</p>
+        </div>
+    </div>
+    
+    <div class="container hidden" id="error-page">
+        <h2 class="error">404 Not Found</h2>
+        <p>Sorry, you are not authorized to view this page.</p>
+    </div>
+
+    <script>
+        function checkName() {
+            let name = document.getElementById('nameInput').value.trim().toLowerCase();
+            if (name === 'utsab adhikari') {
+                document.getElementById('login-page').classList.add('hidden');
+                document.getElementById('welcome-page').classList.remove('hidden');
+            } else {
+                document.getElementById('login-page').classList.add('hidden');
+                document.getElementById('error-page').classList.remove('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
